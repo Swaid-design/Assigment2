@@ -139,8 +139,8 @@ class Retirement(unittest.TestCase):
         with self.assertRaises(KeyError):
             person.set_goal(0)
         with self.assertRaises(KeyError):
-            person.set_goal(1000000000001)
-        self.assertEqual(person.set_goal(1000000000000), 1000000000000)
+            person.set_goal(1000000001)
+        self.assertEqual(person.set_goal(1000000000), 1000000000)
         self.assertEqual(person.set_goal(1000000), 1000000)
 
     def test_savings_per_year(self):

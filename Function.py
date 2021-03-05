@@ -97,7 +97,7 @@ class Retirement_Savings:
     def set_goal(self, goal):
         if (goal <= 0):
             raise KeyError
-        if (goal > 1000000000000):
+        if (goal > 1000000000):
             raise KeyError
 
         return goal
